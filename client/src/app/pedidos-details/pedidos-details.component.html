@@ -1,0 +1,33 @@
+<div class="example-container mat-elevation-z8">
+  <h2>Detalhes do Pedido</h2>
+  <div class="example-loading-shade"
+       *ngIf="isLoadingResults">
+    <mat-spinner *ngIf="isLoadingResults"></mat-spinner>
+  </div>
+  <div class="button-row">
+    <a mat-flat-button color="primary" [routerLink]="['/']"><mat-icon>list</mat-icon></a>
+  </div>
+  <mat-card class="example-card">
+    <mat-card-header>
+      <mat-card-title><h2>{{pedidos.itemName}}</h2></mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+      <dl>
+        <dt>COD:</dt>
+        <dd>{{pedidos.itemId}}</dd>
+        <dt>Preço:</dt>
+        <dd>{{pedidos.itemPrice}}</dd>
+        <dt>Quantidade:</dt>
+        <dd>{{pedidos.itemQty}}</dd>
+        <dt>Preço Total:</dt>
+        <dd>{{pedidos.totalPrice}}</dd>
+        <dt>Última Atualização:</dt>
+        <dd>{{pedidos.updated | date}}</dd>
+      </dl>
+    </mat-card-content>
+    <mat-card-actions>
+      <a mat-flat-button color="primary" [routerLink]="['/edit-pedidos', pedidos._id]"><mat-icon>edit</mat-icon> Editar</a>
+      <a mat-flat-button color="warn" (click)="deletePedidos(pedidos._id)"><mat-icon>delete</mat-icon> Excluir</a>
+    </mat-card-actions>
+  </mat-card>
+</div>

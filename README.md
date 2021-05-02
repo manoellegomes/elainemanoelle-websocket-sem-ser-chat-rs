@@ -1,4 +1,4 @@
-# CRUD com Wesocket (protocolo TCP/IP) - Elaine Manoelle
+# CRUD com Wesocket (protocolo TCP/IP abstraído pela lib socket.io) - Elaine Manoelle
 
 ## Description
 

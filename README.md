@@ -21,6 +21,12 @@ Estava cansada de só ver exemplos de websocket com Chat, então esse é um exem
 * No diretório raíz, rode `npm run start` para levantar o backend. 
 * No diretório /client, rode `npm run start` para rodar e ver o frontend.
 
+## How can you test?
+* Abra a URL http:\\localhost:4200 em duas ou mais janelas do navegador. 
+* Tente deixar todas as janelas uma ao lado da outra para que possa ter todas na sua visão ao mesmo tempo.
+* Agora em uma das janelas utilize o CRUD: Adicione, edite ou exclua um pedido. Pronto, você verá isso ser replicado em tempo real nas demais telas.
+* OBS: Só queria deixar registrado que websocket é maravilhoso. rs
+
 ## For further information
 
 * Email: elaine.manoelle@pmipe.org.br

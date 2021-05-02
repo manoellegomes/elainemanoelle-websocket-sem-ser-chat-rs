@@ -2,7 +2,7 @@
 
 ## Description
 
-Estava cansada de só ver exemplos de websocket com Chat, então esse é um exemplo de websocket simulando um sistema de pedidos CRUD em Angular e NodeJS, e que insere num banco de dado MongoDB sem usar http e sim usando o protocolo TCP/IP do Websocket através da lib socket.io
+Estava cansada de só ver exemplos de websocket com Chat, então esse é um exemplo de websocket simulando um sistema de pedidos CRUD em Angular e NodeJS, e que se comunica com o backend em NodeJ usando o protocolo TCP/IP do Websocket abstraído pela lib socket.io e insere num banco de dado MongoDB
 
 ## Requirements
 * Você deve ter instalado em sua máquina:
